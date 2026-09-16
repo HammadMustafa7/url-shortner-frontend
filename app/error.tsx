@@ -1,6 +1,7 @@
+'use client';
 import Image from "next/image";
 
-const NotFound = () => {
+const ErrorPage = () => {
   return (
     <div className="flex flex-col items-center justify-center mx-auto flex-1 gap-5">
       <Image
@@ -10,10 +11,9 @@ const NotFound = () => {
         height={70}
         className="animate-spin"
       />
-      <h1 className="text-3xl font-mono">404</h1>
-      <h2 className="text-xl font-mono">Page Not Found!</h2>
+      <h2 className="text-xl font-mono">URL Not Found!</h2>
     </div>
   );
 };
 
-export default NotFound;
+export default ErrorPage;
