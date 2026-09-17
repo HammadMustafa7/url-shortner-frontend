@@ -44,6 +44,8 @@ const Analytics = () => {
       setInputUrl("");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
+      setAnalytics(null);
+      setInputUrl("");
     } finally {
       setLoading(false);
     }
