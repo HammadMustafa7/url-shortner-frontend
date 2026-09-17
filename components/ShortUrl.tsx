@@ -69,6 +69,17 @@ const ShortUrl = () => {
       <h2 className="text-start sm:text-center text-xl md:text-3xl font-semibold">
         Paste the (long) url to be shortened
       </h2>
+      <div className="flex flex-col items-start sm:items-center w-full font-semibold text-lg ">
+        <p>
+          Enter your link and click{" "}
+          <span className="italic">Short-en Link</span>
+        </p>
+        <div className="flex flex-col space-y-2 sm:flex-row space-x-4 text-sm font-normal mt-2 text-gray-600">
+          <p>✨ Easy to use</p>
+          <p>📊 Track clicks</p>
+          <p>🔒 Secure</p>
+        </div>
+      </div>
       <form
         onSubmit={onSubmitShortenUrl}
         className=" w-full flex flex-col items-end justify-center "
@@ -113,6 +124,10 @@ const ShortUrl = () => {
           </button>
         </div>
       )}
+      <p className="w-full font-semibold text-start sm:text-center">
+        Include <code>https://</code> at the start (e.g.,
+        https://example.com/page)
+      </p>
     </div>
   );
 };
